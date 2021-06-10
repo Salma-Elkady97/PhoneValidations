@@ -40,6 +40,27 @@ public class CustomerController {
         return customerModel;
 
     }
+    @GetMapping(value = "/phones/notvalid")
+    public List<CustomerModel> getNonValidPhones() {
+        List<CustomerModel> customerModel = new ArrayList<>();
+        customerModel = customerService.getNonValidPhones();
+        return customerModel;
+
+    }
+    @GetMapping(value = "/phones/valid", params = "country")
+    public List<CustomerModel> getValidPhonesForCountry(@RequestParam("country") String country)
+    {
+        List<CustomerModel> customerModel = new ArrayList<>();
+        customerModel = customerService.getValidPhonesForCountry(country);
+        return customerModel;
+    }
+    @GetMapping(value = "/phones/notvalid", params = "country")
+    public List<CustomerModel> getNotValidPhonesForCountry(@RequestParam("country") String country)
+    {
+        List<CustomerModel> customerModel = new ArrayList<>();
+        customerModel = customerService.getNotValidPhonesForCountry(country);
+        return customerModel;
+    }
 
 
 
