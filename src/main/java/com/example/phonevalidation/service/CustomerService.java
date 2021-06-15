@@ -1,6 +1,6 @@
 package com.example.phonevalidation.service;
 
-import com.example.phonevalidation.Model.CustomerModel;
+import com.example.phonevalidation.model.CustomerModel;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

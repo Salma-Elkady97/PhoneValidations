@@ -1,10 +1,4 @@
-package com.example.phonevalidation.Model;
-
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-
-import static javax.persistence.GenerationType.IDENTITY;
+package com.example.phonevalidation.model;
 
 public class CustomerModel {
 

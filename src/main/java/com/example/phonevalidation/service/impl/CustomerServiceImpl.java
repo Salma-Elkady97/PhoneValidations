@@ -1,6 +1,6 @@
 package com.example.phonevalidation.service.impl;
 
-import com.example.phonevalidation.Model.CustomerModel;
+import com.example.phonevalidation.model.CustomerModel;
 import com.example.phonevalidation.entity.Customer;
 import com.example.phonevalidation.repo.CustomerRepository;
 import com.example.phonevalidation.service.CustomerService;
@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 @Service
